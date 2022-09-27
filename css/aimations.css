@@ -1,0 +1,5 @@
+@keyframes changetext {
+    0%{content: "MUMBAI";}
+    49%{content: "CHEMBUR"}
+    99%{content: "VESIT";}
+}

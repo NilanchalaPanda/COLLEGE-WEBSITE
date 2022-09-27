@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESIT - Nonacademic Stuffs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- LOGO IMAGE -->
+            <div class="logo animate__animated animate__bounceIn animate__delay-1s"> <a href="index.html"><img src="img/logo3.jpg" alt="Backgroung Image" width="80px" height="80px"></a></div>
+
+            <!-- NAVIGATION LINKS = MENU -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="active animate__animated animate__fadeInDown animate__delay-1s">HOME</a></li>
+                    <li><a href="clubs.html" class="animate__animated animate__fadeInDown animate__delay-1s">CLUBS</a></li>
+                    <li><a href="councils.html" class="animate__animated animate__fadeInDown animate__delay-1s">COUNCILS</a></li>
+                    <li><a href="societies.html" class="animate__animated animate__fadeInDown animate__delay-1s">SOCIETIES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-window-close" onclick="showMenu()"></i>
+        </nav>
+
+        <!------------ TEXT INSIDE THE MAIN IMAGE ------------> 
+        <main>
+            <section>
+                <h3 class="animate__animated animate__bounceIn animate__delay-1s">Hey Everyone !!</h3>
+                <h1 class="animate__animated animate__bounceIn animate__delay-1s">WELCOME TO <span class="change_content"></span></h1>
+                <a href="#" class="animate__animated animate__bounceIn animate__delay-1s">FROM THE GS</a>
+            </section>
+        </main>
+    </header>
+    
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

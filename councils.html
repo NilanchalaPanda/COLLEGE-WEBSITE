@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESIT - Nonacademic Stuffs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+    <style>
+        .course_col a {
+            margin-top: 50px;
+            padding: 12px 30px;
+            border-radius: 50px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: black;
+            background: whitesmoke;
+            font-weight: bold;
+            border: 2px solid red;
+
+        }
+
+        .course_col a:hover {
+            background-color: rgba(255, 0, 0, 0.571);
+            border: 2px solid red;
+            color: white;
+            transition: ease-in-out 1s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ------------ HEADER'S CODE------------ -->
+    <div class="council_header">
+        <nav>
+            <!-- LOGO IMAGE -->
+            <div class="logo animate__animated animate__bounceIn animate__delay-1s"> <a href="index.html"><img
+                        src="img/logo2.jpeg" alt="Backgroung Image" width="80px" height="80px"></a></div>
+
+            <!-- NAVIGATION LINKS = MENU -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"
+                            class="active animate__animated animate__fadeInDown animate__delay-1s">HOME</a></li>
+                    <li><a href="clubs.html" class="animate__animated animate__fadeInDown animate__delay-1s">CLUBS</a>
+                    </li>
+                    <li><a href="councils.html"
+                            class="animate__animated animate__fadeInDown animate__delay-1s">COUNCILS</a></li>
+                    <li><a href="societies.html"
+                            class="animate__animated animate__fadeInDown animate__delay-1s">SOCIETIES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </div>
+
+
+    <!-- ------------CLUBS CODE------------ -->
+    <div class="clubs">
+        <h1>ALL ABOUT OUR COUNCILS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facere.</p>
+
+
+        <div class="row1">
+            <div class="course_col animate__animated animate__fadeInLeft animate__delay-1s">
+                <h3>VESIT CULTUARL COUNCIL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis natus totam autem nisi nihil harum
+                    excepturi corporis consequatur nobis sed repellendus, incidunt eaque velit libero itaque cupiditate
+                    non distinctio quisquam enim, provident ipsum porro?</p>
+            </div>
+            <div class="course_col animate__animated animate__fadeInRight animate__delay-1s">
+                <h3>VESIT SPORTS COUNCIL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis natus totam autem nisi nihil harum
+                    excepturi corporis consequatur nobis sed repellendus, incidunt eaque velit libero itaque cupiditate
+                    non distinctio quisquam enim, provident ipsum porro?</p>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="course_col animate__animated animate__fadeInLeft animate__delay-1s">
+                <h3>VESIT MUSIC COUNCIL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis natus totam autem nisi nihil harum
+                    excepturi corporis consequatur nobis sed repellendus, incidunt eaque velit libero itaque cupiditate
+                    non distinctio quisquam enim, provident ipsum porro?</p>
+            </div>
+            <div class="course_col animate__animated animate__fadeInRight animate__delay-1s">
+                <h3>VESIT SORT COUNCIL</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis natus totam autem nisi nihil harum
+                    excepturi corporis consequatur nobis sed repellendus, incidunt eaque velit libero itaque cupiditate
+                    non distinctio quisquam enim, provident ipsum porro?</p>
+            </div>
+        </div>
+    </div>
+    <!-- JAVASCRIPT CODE FOR TOGGLE MENU -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
